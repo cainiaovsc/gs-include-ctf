@@ -1,0 +1,6 @@
+<?php
+
+$flag = "flag{be4402d1f8dd451d98772fd50f6eee85}";
+echo "include success!!";
+?>
+
