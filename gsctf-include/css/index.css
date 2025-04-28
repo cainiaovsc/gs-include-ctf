@@ -1,0 +1,66 @@
+
+/* 基础样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+ul#less {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+ul#less li {
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+ul#less li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+ul#less li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 25px;
+    /* 防止双击太快选中文字 */
+    user-select: none; /* 标准语法 */
+    -webkit-user-select: none; /* Webkit 浏览器 */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+ul#less li a:hover {
+    color: #6a11cb;
+}
+
+ul#less li:hover {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+ul#less li:active {
+    transform: scale(2);
+}
